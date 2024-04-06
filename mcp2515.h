@@ -51,6 +51,10 @@
 #define MCP_8MHz_31k25BPS_CFG2 (0xA4)
 #define MCP_8MHz_31k25BPS_CFG3 (0x84)
 
+#define MCP_8MHz_25kBPS_CFG1 (0x07)
+#define MCP_8MHz_25kBPS_CFG2 (0xB3)
+#define MCP_8MHz_25kBPS_CFG3 (0x87)
+
 #define MCP_8MHz_20kBPS_CFG1 (0x07)
 #define MCP_8MHz_20kBPS_CFG2 (0xBF)
 #define MCP_8MHz_20kBPS_CFG3 (0x87)
@@ -113,6 +117,10 @@
 #define MCP_16MHz_33k3BPS_CFG1 (0x4E)
 #define MCP_16MHz_33k3BPS_CFG2 (0xF1)
 #define MCP_16MHz_33k3BPS_CFG3 (0x85)
+
+#define MCP_16MHz_25kBPS_CFG1 (0x0F)
+#define MCP_16MHz_25kBPS_CFG2 (0xFA)
+#define MCP_16MHz_25kBPS_CFG3 (0x87)
 
 #define MCP_16MHz_20kBPS_CFG1 (0x0F)
 #define MCP_16MHz_20kBPS_CFG2 (0xFF)
@@ -195,7 +203,8 @@ enum CAN_SPEED {
     CAN_200KBPS,
     CAN_250KBPS,
     CAN_500KBPS,
-    CAN_1000KBPS
+    CAN_1000KBPS,
+	CAN_25KBPS
 };
 
 enum CAN_CLKOUT {
